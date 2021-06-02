@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "about";
+}
+
+<h2>about</h2>
+<p class="p1">this is the about page of the home controller</p>
+<p class="p2">this is the about page of the home controller</p>
+<p class="p1">this is the about page of the home controller</p>
+<h2 id="id">
+    here i perform the javascript operation and other activties of scripting languge
+</h2>
+<button id="1">click me to fadein</button>
+<button id="2">click me to slideDown</button>
+<button id="3">click me toggle</button>
+<br />
+<br />
+<button id="4">start animation</button>
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+@*<button id="show">click me to fadeout</button>
+    <br />
+    <br />
+    <button id="toggle">click me toggle</button>*@
+
+
+
+<script>
+
+    $(document).ready(function () {
+        $("#4").click(function () {
+            $("div").animate({
+                right: '100px'
+               ,
+                opacity: '0.5',
+                height: '50px',
+                width: '50px',
+                position:'absolute'
+
+            });
+        });
+
+
+    });
+
+
+
+
+</script>
+
+
+
+
+
+
+
